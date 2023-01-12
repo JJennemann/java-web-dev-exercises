@@ -1,4 +1,4 @@
-package ExercisesCh2;
+package Exercisesch2;
 
 import java.util.Scanner;
 public class MilesPerGallon {

@@ -1,8 +1,8 @@
-package ExercisesCh2;
+package Exercisesch2;
 
 import java.util.Scanner;
 
-public class Alice {
+public class Alice2 {
     public static void main(String[] arg){
         Scanner input = new Scanner(System.in);
 
@@ -16,7 +16,13 @@ public class Alice {
         System.out.println("What term would you like to search?");
         String searchWord = input.nextLine();
         boolean result = aliceLine.toUpperCase().contains(searchWord.toUpperCase());
+        double searchWordIndex = aliceLine.toUpperCase().indexOf(searchWord.toUpperCase());
+        double searchWordLength = searchWord.length();
+        String newAliceLine = aliceLine.replace(searchWord, "");
         System.out.println("Search term was found: " +result);
+        System.out.println("Search term was found at index: " + searchWordIndex);
+        System.out.println("Search term has a length of : " + searchWordLength);
+        System.out.println(newAliceLine);
         input.close();
     }
 }
